@@ -1,0 +1,97 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+    <style>
+       body{
+           /*background-image:url("{% static 'diseaseprediction/images/download.jpg'%}");*/
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           background-color: #14213d;
+       }
+       .main{
+           position: fixed;
+           top: 140px;
+           left: 305px;
+           width: 550px;
+           background-color: #ffffff;
+           border-radius: 10px;
+           align-items: center;
+           padding: 5%;
+       }
+       h1{
+           color: #14213d;
+           font-size: 30px;
+           font-weight: bold;
+       }
+       input[type=submit]{
+           background-color: #14213d;
+           border: 2px;
+           color: white;
+           padding: 8px 16px;
+           cursor: pointer;
+           margin-top: 15px;
+       }
+       form{
+           color: #14213d;
+       }
+       input[type="text"]{
+           border:3px solid #14213d;
+       }
+       p{
+           color:#ffffff;
+           text-align: center;
+           font-size: 50px;
+           padding-left: 10px;
+       }
+    </style>
+</head>
+<body>
+<p>Welcome to Diabetes Prediction</p>
+<div align="center" class="main">
+    <h1>Please enter the following information:</h1>
+    <form action="result1">
+        <table>
+            <tr>
+                <td align=""right>Pregnancies:</td>
+                <td align="left"><input type="text" name="d1"></td>
+            </tr>
+            <tr>
+                <td align=""right>Glucose:</td>
+                <td align="left"><input type="text" name="d2"></td>
+            </tr>
+            <tr>
+                <td align=""right>Blood Pressure:</td>
+                <td align="left"><input type="text" name="d3"></td>
+            </tr>
+            <tr>
+                <td align=""right>Skin Thickness:</td>
+                <td align="left"><input type="text" name="d4"></td>
+            </tr>
+            <tr>
+                <td align=""right>Insulin:</td>
+                <td align="left"><input type="text" name="d5"></td>
+            </tr>
+            <tr>
+                <td align=""right>BMI:</td>
+                <td align="left"><input type="text" name="d6"></td>
+            </tr>
+            <tr>
+                <td align=""right>Diabetes Predigree Function:</td>
+                <td align="left"><input type="text" name="d7"></td>
+            </tr>
+            <tr>
+                <td align=""right>Age:</td>
+                <td align="left"><input type="text" name="d8"></td>
+            </tr>
+        </table>
+        <input type="submit">
+    </form>
+    <span>Result:{{result2}}</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Prediction</title>
+    <style>
+        body{
+            /*background-image: url("{% static 'diseaseprediction/images/download.jpg'%}");*/
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #14213d;
+        }
+       .main{
+           position: absolute;
+           top: 100px;
+           left: 315px;
+           width: 550px;
+           background-color: #ffffff;
+           border-radius: 10px;
+           align-items: center;
+           padding-left: 30px;
+           margin-left: 18px;
+           padding-right: 30px;
+       }
+       h1{
+           color: #14213d;
+           font-size: 30px;
+           font-weight: bold;
+       }
+       input[type=submit]{
+           background-color: #14213d;
+           border: 2px;
+           color: white;
+           padding: 8px 16px;
+           cursor: pointer;
+           margin-top: 15px;
+       }
+       form{
+           color: #14213d;
+       }
+       input[type="text"]{
+           border:3px solid #14213d;
+       }
+       p{
+           color:#ffffff;
+           text-align: center;
+           font-size: 45px;
+           margin-top: 0px;
+           margin-left: 2px;
+       }
+       input[type=submit]:hover{
+           background-color: white;
+           color: black;
+       }
+
+    </style>
+</head>
+<body>
+   <p>Welcome to Heart Disease Prediction</p>
+<div align="center" class="main">
+    <h1>Please enter the following information:</h1>
+    <form action="result3">
+        <table>
+            <tr>
+                <td align="right">Age:</td>
+                <td align="left"><input type="text" name="h1"></td>
+            </tr>
+            <tr>
+                <td align="right">Sex (Male=1, Female=0):</td>
+                <td align="left"><input type="text" name="h2"></td>
+            </tr>
+            <tr>
+                <td align="right">Constrictive Pericarditis (cp):</td>
+                <td align="left"><input type="text" name="h3"></td>
+            </tr>
+            <tr>
+                <td align="right">Resting Blood Sugar:</td>
+                <td align="left"><input type="text" name="h4"></td>
+            </tr>
+            <tr>
+                <td align="right">Cholestrol:</td>
+                <td align="left"><input type="text" name="h5"></td>
+            </tr>
+            <tr>
+                <td align="right">Fasting Blood Sugar:</td>
+                <td align="left"><input type="text" name="h6"></td>
+            </tr>
+            <tr>
+                <td align="right">Resting ECG:</td>
+                <td align="left"><input type="text" name="h7"></td>
+            </tr>
+            <tr>
+                <td align="right">Maximum Heart Rate:</td>
+                <td align="left"><input type="text" name="h8"></td>
+            </tr>
+            <tr>
+                <td align="right">Exercise Induced Angina:</td>
+                <td align="left"><input type="text" name="h9"></td>
+            </tr>
+            <tr>
+                <td align="right">Oldpeak:</td>
+                <td align="left"><input type="text" name="h10"></td>
+            </tr>
+            <tr>
+                <td align="right">Heart Rate Slope:</td>
+                <td align="left"><input type="text" name="h11"></td>
+            </tr>
+            <tr>
+                <td align="right">ca:</td>
+                <td align="left"><input type="text" name="h12"></td>
+            </tr>
+            <tr>
+                <td align="right">Thalassemia:</td>
+                <td align="left"><input type="text" name="h13"></td>
+            </tr>
+        </table>
+        <input type="submit">
+    </form>
+    Result:{{result4}}
+</div>
+</body>
+</html>
