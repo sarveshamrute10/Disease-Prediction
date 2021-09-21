@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style type = text/css>
+
+        h1{
+            color:#000000;
+            font-family:arial,sans-serif;
+            font-size : 60px;
+            font-weight:bold;
+            margin-top:200px;
+        }
+        h2{
+            color:'white';
+            font-family:arial,sans-serif;
+            font-size : 15px;
+            font-weight:bold;
+            margin-top:400px;
+        }
+        body{
+            /*background-image:url("{% static 'diseaseprediction/images/unnamed.png'%}");*/
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        input[type="submit"]{
+            background-color:#fca311;
+            border:2px;
+            color:#000000;
+            padding:16px 32px;
+            cursor: pointer;
+            margin-top : 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        form{
+            display:inline;
+        }
+        input[type="submit"]:hover{
+            background-color: white;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+<div align = 'center'>
+    <h1>
+        Welcome To Disease Prediction System
+    </h1>
+    <form action = "diabetes">
+        <input type="submit" value = "Predict Diabetes">
+    </form>
+
+    <form action = "heart">
+        <input type="submit" value = "Predict Heart Disease">
+    </form>
+</div>
+</body>
+</html>
